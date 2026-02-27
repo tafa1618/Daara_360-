@@ -1,0 +1,314 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 24px 80px;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.heroContent {
+    flex: 1.2;
+}
+
+/* Badge */
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-glass);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.badgeDot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+/* Title */
+.heroTitle {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+
+.titleLine {
+    display: block;
+}
+
+.titleGradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.heroSubtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+/* Actions */
+.heroActions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+/* Stats */
+.heroStats {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.statNumber {
+    font-size: 2rem;
+    font-weight: 800;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+.statSuffix {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+}
+
+.statDivider {
+    width: 1px;
+    height: 40px;
+    background: var(--border-subtle);
+}
+
+/* ---------- Orbit System ---------- */
+.heroVisual {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.orbitSystem {
+    width: 380px;
+    height: 380px;
+    position: relative;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid var(--border-subtle);
+    border-radius: 50%;
+}
+
+.orbit1 {
+    width: 380px;
+    height: 380px;
+    top: 0;
+    left: 0;
+    animation: spin 30s linear infinite;
+}
+
+.orbit2 {
+    width: 300px;
+    height: 300px;
+    top: 40px;
+    left: 40px;
+    animation: spin 25s linear infinite reverse;
+}
+
+.orbit3 {
+    width: 220px;
+    height: 220px;
+    top: 80px;
+    left: 80px;
+    animation: spin 20s linear infinite;
+}
+
+.orbit4 {
+    width: 140px;
+    height: 140px;
+    top: 120px;
+    left: 120px;
+    animation: spin 15s linear infinite reverse;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.orbitItem {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px);
+}
+
+.orbit1 .orbitItem {
+    animation: counterSpin 30s linear infinite;
+}
+
+.orbit2 .orbitItem {
+    animation: counterSpin 25s linear infinite reverse;
+}
+
+.orbit3 .orbitItem {
+    animation: counterSpin 20s linear infinite;
+}
+
+.orbit4 .orbitItem {
+    animation: counterSpin 15s linear infinite reverse;
+}
+
+@keyframes counterSpin {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(-360deg);
+    }
+}
+
+.orbitCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 60px rgba(77, 124, 254, 0.3);
+}
+
+.orbitCenterText {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 140px;
+    }
+
+    .heroSubtitle {
+        margin: 0 auto 40px;
+    }
+
+    .heroActions {
+        justify-content: center;
+    }
+
+    .heroStats {
+        justify-content: center;
+    }
+
+    .orbitSystem {
+        width: 280px;
+        height: 280px;
+    }
+
+    .orbit1 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .orbit2 {
+        width: 220px;
+        height: 220px;
+        top: 30px;
+        left: 30px;
+    }
+
+    .orbit3 {
+        width: 160px;
+        height: 160px;
+        top: 60px;
+        left: 60px;
+    }
+
+    .orbit4 {
+        width: 100px;
+        height: 100px;
+        top: 90px;
+        left: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroStats {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .statDivider {
+        width: 40px;
+        height: 1px;
+    }
+}
