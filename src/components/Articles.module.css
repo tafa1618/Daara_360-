@@ -34,7 +34,7 @@
 /* ---------- Articles Grid ---------- */
 .articlesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
     gap: 24px;
     margin-bottom: 64px;
 }
@@ -296,5 +296,22 @@
 
     .articlesGrid {
         grid-template-columns: 1fr;
+    }
+
+    .seriesSection {
+        padding: 24px;
+    }
+
+    .seriesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .filterTabs {
+        gap: 6px;
+    }
+
+    .filterTab {
+        padding: 6px 14px;
+        font-size: 0.75rem;
     }
 }
