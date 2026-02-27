@@ -40,10 +40,12 @@ export default function RootLayout({
     <html lang="fr" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
         {/* Animated background effects */}
-        <div className="bg-grid" />
-        <div className="gradient-orb gradient-orb-1" />
-        <div className="gradient-orb gradient-orb-2" />
-        <div className="gradient-orb gradient-orb-3" />
+        <div className="background-container">
+          <div className="bg-grid" />
+          <div className="gradient-orb gradient-orb-1" />
+          <div className="gradient-orb gradient-orb-2" />
+          <div className="gradient-orb gradient-orb-3" />
+        </div>
 
         <Navbar />
 

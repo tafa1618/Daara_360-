@@ -74,8 +74,20 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.background-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
@@ -98,6 +110,13 @@ img {
   background-size: 60px 60px;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .gradient-orb {

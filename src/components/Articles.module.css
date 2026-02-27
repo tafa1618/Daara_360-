@@ -1,10 +1,27 @@
-/* ---------- Filter Tabs ---------- */
 .filterTabs {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 48px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 20px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    width: 100%;
+}
+
+.filterTabs::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+@media (max-width: 768px) {
+    .filterTabs {
+        justify-content: flex-start;
+    }
 }
 
 .filterTab {
