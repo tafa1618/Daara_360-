@@ -1,0 +1,102 @@
+.pillarsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.pillarCard {
+    position: relative;
+    padding: 36px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    cursor: default;
+}
+
+.pillarCard:hover {
+    transform: translateY(-4px);
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+}
+
+/* Icon */
+.pillarIcon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-subtle);
+    margin-bottom: 20px;
+    color: var(--accent-blue);
+}
+
+.pillarIcon[data-color="purple"] {
+    color: var(--accent-purple);
+}
+
+.pillarIcon[data-color="green"] {
+    color: var(--accent-green);
+}
+
+.pillarIcon[data-color="orange"] {
+    color: var(--accent-orange);
+}
+
+/* Text */
+.pillarTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pillarDesc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.pillarTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Glow effect */
+.pillarGlow {
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0;
+    transition: opacity var(--transition-slow);
+    pointer-events: none;
+}
+
+.pillarCard:hover .pillarGlow {
+    opacity: 1;
+}
+
+.glowBlue {
+    background: var(--accent-blue-glow);
+}
+
+.glowPurple {
+    background: var(--accent-purple-glow);
+}
+
+.glowGreen {
+    background: var(--accent-green-glow);
+}
+
+.glowOrange {
+    background: var(--accent-orange-glow);
+}
