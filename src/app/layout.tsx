@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const inter = Inter({
@@ -43,6 +44,8 @@ export default function RootLayout({
         <div className="gradient-orb gradient-orb-1" />
         <div className="gradient-orb gradient-orb-2" />
         <div className="gradient-orb gradient-orb-3" />
+
+        <Navbar />
 
         {children}
       </body>
