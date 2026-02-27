@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daara 360° — Science, Finance & Ingénierie</title>
+    <meta name="description"
+        content="Daara 360° — Blog personnel et portfolio autour de la science de l'ingénieur, la finance quantitative, les méthodes industrielles et les KPIs data-driven.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated background -->
+    <div class="bg-grid"></div>
+    <div class="gradient-orb gradient-orb-1"></div>
+    <div class="gradient-orb gradient-orb-2"></div>
+    <div class="gradient-orb gradient-orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◉</span>
+                <span class="logo-text">Daara <span class="logo-accent">360°</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#piliers" class="nav-link">Expertise</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#apropos" class="nav-link">À Propos</a>
+                <a href="#contact" class="nav-link nav-link-cta">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Blog & Portfolio — Science de l'Ingénieur</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">L'ingénierie rencontre</span>
+                <span class="title-line title-gradient">la data & la finance</span>
+            </h1>
+            <p class="hero-subtitle">
+                Articles, tutoriels et analyses au croisement de la science de l'ingénieur,
+                la finance quantitative, les méthodes industrielles et les KPIs data-driven.
+            </p>
+            <div class="hero-actions">
+                <a href="#articles" class="btn btn-primary">
+                    <span>Explorer les articles</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#piliers" class="btn btn-ghost">
+                    <span>Découvrir l'expertise</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Piliers d'expertise</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="360">0</span>
+                    <span class="stat-suffix">°</span>
+                    <span class="stat-label">Vision complète</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Data-driven</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-system">
+                <div class="orbit orbit-1">
+                    <div class="orbit-item" data-label="RDM">📐</div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="orbit-item" data-label="Quant">📈</div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="orbit-item" data-label="KPI">📊</div>
+                </div>
+                <div class="orbit orbit-4">
+                    <div class="orbit-item" data-label="CATIA">🔧</div>
+                </div>
+                <div class="orbit-center">
+                    <span class="orbit-center-text">360°</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Piliers Section -->
+    <section class="section" id="piliers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Domaines d'expertise</span>
+                <h2 class="section-title">Quatre piliers, <span class="text-gradient">une vision</span></h2>
+                <p class="section-subtitle">Une approche multidisciplinaire à la croisée de l'ingénierie, de la finance
+                    et de la data.</p>
+            </div>
+            <div class="pillars-grid">
+                <!-- Pillar 1 -->
+                <div class="pillar-card" data-pillar="engineering">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Science de l'Ingénieur</h3>
+                    <p class="pillar-desc">RDM, CAO CATIA, systèmes dynamiques, thermodynamique, maintenance prédictive.
+                    </p>
+                    <div class="pillar-tags">
+                        <span class="tag">RDM</span>
+                        <span class="tag">CATIA</span>
+                        <span class="tag">FMECA</span>
+                        <span class="tag">Digital Twin</span>
+                    </div>
+                    <div class="pillar-glow pillar-glow-blue"></div>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="pillar-card" data-pillar="finance">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Finance Quantitative</h3>
+                    <p class="pillar-desc">Modèles stochastiques, risk management, trading algorithmique, simulations
+                        Monte Carlo.</p>
+                    <div class="pillar-tags">
+                        <span class="tag">Black-Scholes</span>
+                        <span class="tag">VaR</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">CVA</span>
+                    </div>
+                    <div class="pillar-glow pillar-glow-purple"></div>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="pillar-card" data-pillar="methods">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">Méthodes & Process</h3>
+                    <p class="pillar-desc">Lean, Six Sigma, DMAIC, gestion de projet, change management, amélioration
+                        continue.</p>
+                    <div class="pillar-tags">
+                        <span class="tag">Lean</span>
+                        <span class="tag">Six Sigma</span>
+                        <span class="tag">PDCA</span>
+                        <span class="tag">Agile</span>
+                    </div>
+                    <div class="pillar-glow pillar-glow-green"></div>
+                </div>
+                <!-- Pillar 4 -->
+                <div class="pillar-card" data-pillar="kpi">
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="9" y1="21" x2="9" y2="9" />
+                        </svg>
+                    </div>
+                    <h3 class="pillar-title">KPIs Data-Driven</h3>
+                    <p class="pillar-desc">OEE, MTBF, MTTR, dashboards Power BI, maintenance prédictive, ML industriel.
+                    </p>
+                    <div class="pillar-tags">
+                        <span class="tag">OEE</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">COPQ</span>
+                    </div>
+                    <div class="pillar-glow pillar-glow-orange"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="section section-dark" id="articles">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Publications récentes</span>
+                <h2 class="section-title">Articles & <span class="text-gradient">Tutoriels</span></h2>
+                <p class="section-subtitle">Analyses approfondies, retours d'expérience et tutoriels techniques.</p>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Tout</button>
+                <button class="filter-tab" data-filter="engineering">🔧 Ingénieur</button>
+                <button class="filter-tab" data-filter="finance">📈 Finance</button>
+                <button class="filter-tab" data-filter="methods">⚙️ Méthodes</button>
+                <button class="filter-tab" data-filter="kpi">📊 KPIs</button>
+                <button class="filter-tab" data-filter="video">🎬 Vidéos</button>
+            </div>
+
+            <!-- Articles grid -->
+            <div class="articles-grid">
+                <article class="article-card article-featured" data-category="engineering">
+                    <div class="article-image">
+                        <div class="article-image-placeholder engineering-bg">
+                            <span>📐</span>
+                        </div>
+                        <span class="article-badge">Nouveau</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-engineering">Science Ingénieur</span>
+                            <span class="article-date">27 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Dimensionnement RDM : De la théorie au cas industriel réel</h3>
+                        <p class="article-excerpt">Comment appliquer les principes de résistance des matériaux pour
+                            résoudre un problème concret de fatigue sur une structure industrielle...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">8 min de lecture</span>
+                            <a href="#" class="article-link">Lire →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="finance">
+                    <div class="article-image">
+                        <div class="article-image-placeholder finance-bg">
+                            <span>📈</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-finance">Quant Finance</span>
+                            <span class="article-date">24 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Simulation Monte Carlo en Python : Pricing d'options vanilles</h3>
+                        <p class="article-excerpt">Tutorial complet avec code Python pour implémenter une simulation
+                            Monte Carlo...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">12 min</span>
+                            <a href="#" class="article-link">Lire →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="kpi">
+                    <div class="article-image">
+                        <div class="article-image-placeholder kpi-bg">
+                            <span>📊</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-kpi">KPI Data-Driven</span>
+                            <span class="article-date">20 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Le KPI de la semaine : OEE — Au-delà du taux de disponibilité</h3>
+                        <p class="article-excerpt">Pourquoi l'OEE est bien plus qu'un simple pourcentage et comment le
+                            décomposer...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">6 min</span>
+                            <a href="#" class="article-link">Lire →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="methods">
+                    <div class="article-image">
+                        <div class="article-image-placeholder methods-bg">
+                            <span>⚙️</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-methods">Méthodes</span>
+                            <span class="article-date">17 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Process Hack : Réduire le lead time de 40% avec une approche DMAIC
+                        </h3>
+                        <p class="article-excerpt">Étude de cas : comment une démarche DMAIC structurée a transformé une
+                            ligne...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">10 min</span>
+                            <a href="#" class="article-link">Lire →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card article-video" data-category="video">
+                    <div class="article-image">
+                        <div class="article-image-placeholder video-bg">
+                            <span>🎬</span>
+                            <div class="play-button">▶</div>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-video">Mini Tuto YouTube</span>
+                            <span class="article-date">15 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Quant Corner : Implémenter un modèle Black-Scholes en 10 minutes</h3>
+                        <p class="article-excerpt">Mini tutoriel vidéo : du modèle mathématique au code Python
+                            fonctionnel...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">10 min vidéo</span>
+                            <a href="#" class="article-link">Regarder →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card" data-category="engineering">
+                    <div class="article-image">
+                        <div class="article-image-placeholder engineering-bg">
+                            <span>🔧</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category cat-engineering">Science Ingénieur</span>
+                            <span class="article-date">12 Fév 2026</span>
+                        </div>
+                        <h3 class="article-title">Modélisation CATIA V5 : Workflow optimal pour les assemblages
+                            complexes</h3>
+                        <p class="article-excerpt">Bonnes pratiques et méthodologie pour une conception paramétrique
+                            efficace...</p>
+                        <div class="article-footer">
+                            <span class="article-read-time">15 min</span>
+                            <a href="#" class="article-link">Lire →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Series section -->
+            <div class="series-section">
+                <h3 class="series-title">📚 Séries en cours</h3>
+                <div class="series-grid">
+                    <div class="series-card">
+                        <div class="series-progress">
+                            <div class="progress-bar" style="--progress: 60%"></div>
+                        </div>
+                        <span class="series-label">Le KPI de la semaine</span>
+                        <span class="series-count">12/20 épisodes</span>
+                    </div>
+                    <div class="series-card">
+                        <div class="series-progress">
+                            <div class="progress-bar" style="--progress: 30%"></div>
+                        </div>
+                        <span class="series-label">Quant Corner</span>
+                        <span class="series-count">6/20 épisodes</span>
+                    </div>
+                    <div class="series-card">
+                        <div class="series-progress">
+                            <div class="progress-bar" style="--progress: 45%"></div>
+                        </div>
+                        <span class="series-label">Process Hack</span>
+                        <span class="series-count">9/20 épisodes</span>
+                    </div>
+                    <div class="series-card">
+                        <div class="series-progress">
+                            <div class="progress-bar" style="--progress: 25%"></div>
+                        </div>
+                        <span class="series-label">Engineering Insight</span>
+                        <span class="series-count">5/20 épisodes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- À Propos -->
+    <section class="section section-dark" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">À propos</span>
+                    <h2 class="section-title">L'ingénieur derrière <span class="text-gradient">Daara 360°</span></h2>
+                    <p class="about-text">
+                        Ingénieur passionné par l'intersection entre la science, la finance et la data.
+                        Daara 360° est né de la conviction que les meilleures solutions émergent quand on
+                        croise les disciplines — quand un modèle financier éclaire une décision industrielle,
+                        quand la data transforme un KPI en levier d'action.
+                    </p>
+                    <p class="about-text">
+                        À travers ce blog, je partage des analyses, des tutoriels et des retours d'expérience
+                        pour construire des ponts entre ces mondes.
+                    </p>
+                    <div class="about-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="about-mini-card">
+                            <span class="mini-card-icon">🎓</span>
+                            <span class="mini-card-text">Ingénieur diplômé</span>
+                        </div>
+                        <div class="about-mini-card">
+                            <span class="mini-card-icon">🏭</span>
+                            <span class="mini-card-text">Expérience industrielle</span>
+                        </div>
+                        <div class="about-mini-card">
+                            <span class="mini-card-icon">📊</span>
+                            <span class="mini-card-text">Data-driven mindset</span>
+                        </div>
+                        <div class="about-mini-card">
+                            <span class="mini-card-icon">💻</span>
+                            <span class="mini-card-text">Python & Finance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Newsletter -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="cta-block">
+                <div class="cta-content">
+                    <h2 class="cta-title">Restez connecté avec <span class="text-gradient">Daara 360°</span></h2>
+                    <p class="cta-subtitle">Newsletter mensuelle — Les meilleurs articles, tutoriels et insights
+                        directement dans votre boîte mail.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" placeholder="votre@email.com" class="input-email" required>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>S'abonner</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="cta-privacy">Pas de spam. Désabonnement en un clic.</p>
+                </div>
+                <div class="cta-decoration">
+                    <div class="cta-orbit"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">◉</span>
+                    <span class="logo-text">Daara <span class="logo-accent">360°</span></span>
+                    <p class="footer-tagline">L'ingénierie rencontre la data & la finance.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Piliers</h4>
+                    <a href="#">Science Ingénieur</a>
+                    <a href="#">Finance Quantitative</a>
+                    <a href="#">Méthodes & Process</a>
+                    <a href="#">KPIs Data-Driven</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Séries</h4>
+                    <a href="#">Le KPI de la semaine</a>
+                    <a href="#">Quant Corner</a>
+                    <a href="#">Process Hack</a>
+                    <a href="#">Engineering Insight</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Liens</h4>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Daara 360° — Tous droits réservés</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
